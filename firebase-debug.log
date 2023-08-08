@@ -1,0 +1,127 @@
+[debug] [2023-07-17T23:27:11.110Z] ----------------------------------------------------------------------
+[debug] [2023-07-17T23:27:11.116Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\felix\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-07-17T23:27:11.118Z] CLI Version:   12.4.4
+[debug] [2023-07-17T23:27:11.120Z] Platform:      win32
+[debug] [2023-07-17T23:27:11.121Z] Node Version:  v18.16.0
+[debug] [2023-07-17T23:27:11.123Z] Time:          Mon Jul 17 2023 20:27:11 GMT-0300 (hora estándar de Argentina)
+[debug] [2023-07-17T23:27:11.124Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-17T23:27:11.152Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-17T23:27:11.154Z] > authorizing via signed-in user (felix.dekker22@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\sites\react\my-app
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-07-17T23:28:19.528Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-07-17T23:28:20.358Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-07-17T23:28:20.359Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project mates-cancheros (Mates Cancheros) 
+[info] 
+=== Firestore Setup
+[debug] [2023-07-17T23:28:24.577Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/mates-cancheros/services/firestore.googleapis.com [none]
+[debug] [2023-07-17T23:28:24.577Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/mates-cancheros/services/firestore.googleapis.com x-goog-quota-user=projects/mates-cancheros
+[debug] [2023-07-17T23:28:25.856Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/mates-cancheros/services/firestore.googleapis.com 200
+[debug] [2023-07-17T23:28:25.857Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/mates-cancheros/services/firestore.googleapis.com [omitted]
+[debug] [2023-07-17T23:28:25.859Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/mates-cancheros/databases/(default) [none]
+[debug] [2023-07-17T23:28:27.029Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/mates-cancheros/databases/(default) 200
+[debug] [2023-07-17T23:28:27.031Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/mates-cancheros/databases/(default) {"name":"projects/mates-cancheros/databases/(default)","uid":"3daa22a6-3359-4400-bc5d-78d67bd98c61","createTime":"2023-07-13T00:29:07.849256Z","updateTime":"2023-07-13T00:29:07.849256Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2023-07-17T22:28:28.898198Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IOahpr/yloADMLPB3fq2ioAD"}
+[debug] [2023-07-17T23:28:27.032Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-07-17T23:28:27.033Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-17T23:28:27.034Z] > authorizing via signed-in user (felix.dekker22@gmail.com)
+[debug] [2023-07-17T23:28:27.034Z] [iam] checking project mates-cancheros for permissions ["firebase.projects.get"]
+[debug] [2023-07-17T23:28:27.036Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mates-cancheros:testIamPermissions [none]
+[debug] [2023-07-17T23:28:27.037Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mates-cancheros:testIamPermissions x-goog-quota-user=projects/mates-cancheros
+[debug] [2023-07-17T23:28:27.037Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mates-cancheros:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-17T23:28:27.967Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mates-cancheros:testIamPermissions 200
+[debug] [2023-07-17T23:28:27.967Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mates-cancheros:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-07-17T23:29:15.273Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/mates-cancheros/releases pageSize=10&pageToken=
+[debug] [2023-07-17T23:29:16.236Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/mates-cancheros/releases 200
+[debug] [2023-07-17T23:29:16.237Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/mates-cancheros/releases {"releases":[{"name":"projects/mates-cancheros/releases/cloud.firestore","rulesetName":"projects/mates-cancheros/rulesets/48b35249-d293-49da-9274-eca4fdfc4e3d","createTime":"2023-07-13T00:29:14.139862Z","updateTime":"2023-07-13T00:29:14.139862Z"}]}
+[debug] [2023-07-17T23:29:16.237Z] Found ruleset: projects/mates-cancheros/rulesets/48b35249-d293-49da-9274-eca4fdfc4e3d
+[debug] [2023-07-17T23:29:16.238Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/mates-cancheros/rulesets/48b35249-d293-49da-9274-eca4fdfc4e3d [none]
+[debug] [2023-07-17T23:29:17.122Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/mates-cancheros/rulesets/48b35249-d293-49da-9274-eca4fdfc4e3d 200
+[debug] [2023-07-17T23:29:17.122Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/mates-cancheros/rulesets/48b35249-d293-49da-9274-eca4fdfc4e3d [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-07-17T23:29:17.250Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/mates-cancheros/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-07-17T23:29:17.256Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/mates-cancheros/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-07-17T23:29:18.298Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/mates-cancheros/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-07-17T23:29:18.298Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/mates-cancheros/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-07-17T23:29:18.307Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/mates-cancheros/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-07-17T23:29:18.307Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/mates-cancheros/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/mates-cancheros/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-07-17T23:29:56.236Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-07-17T23:29:56.312Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-07-17T23:29:56.313Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.0.0","browserURL":"https://www.gstatic.com/firebasejs/10.0.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.0.0/firebase.tgz"},"live":{"version":"10.0","browserURL":"https://www.gstatic.com/firebasejs/live/10.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.0/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.0.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.0.0/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.0.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.0.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.0.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.0.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.0.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.0.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.0.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.0.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\sites\react\my-app 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=571521371&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-07-17T23:30:56.621Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-07-17T23:30:56.622Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-07-17T23:30:57.011Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-07-17T23:30:57.012Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-07-17T23:30:57.179Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-07-17T23:30:57.638Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-07-17T23:30:57.644Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"FelixDekker","id":124459210,"node_id":"U_kgDOB2sYyg","avatar_url":"https://avatars.githubusercontent.com/u/124459210?v=4","gravatar_id":"","url":"https://api.github.com/users/FelixDekker","html_url":"https://github.com/FelixDekker","followers_url":"https://api.github.com/users/FelixDekker/followers","following_url":"https://api.github.com/users/FelixDekker/following{/other_user}","gists_url":"https://api.github.com/users/FelixDekker/gists{/gist_id}","starred_url":"https://api.github.com/users/FelixDekker/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/FelixDekker/subscriptions","organizations_url":"https://api.github.com/users/FelixDekker/orgs","repos_url":"https://api.github.com/users/FelixDekker/repos","events_url":"https://api.github.com/users/FelixDekker/events{/privacy}","received_events_url":"https://api.github.com/users/FelixDekker/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":4,"public_gists":0,"followers":0,"following":0,"created_at":"2023-02-04T17:43:05Z","updated_at":"2023-07-17T23:30:52Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":2604,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as FelixDekker 
+[info] 
+[debug] [2023-07-17T23:32:36.187Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-07-17T23:32:36.488Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-07-17T23:32:36.489Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-07-17T23:32:45.715Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-07-17T23:32:46.013Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-07-17T23:32:46.014Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
